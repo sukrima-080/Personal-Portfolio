@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* smooth scrolling */
+        html{
+            scroll-behavior: smooth;
+        }
+        
+        
+        /* common body style */
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif; 
+            background:
+            linear-gradient(135deg, rgba(156, 175, 136, 0.4), rgba(201, 214, 185, 0.4)),
+            url("images/prof2.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;   
+        }
+        /* common nav bar style */
+        
+        
+        
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: #3d4127;
+            padding: 10px; 
+            text-align: center;
+        }
+        /* navigation bar links */
+        nav a {
+            color: #F4D35E;
+            margin: 0 15px;
+            text-decoration: solid;
+            font-size: 18px;
+            display: inline-block;
+            transition: 0.3s;
+            padding: 6px 12px;
+        }
+        /* navigation bar links hover effect */
+        nav a:hover {
+            /* background-color: #bac095; */
+            color: #abcab4;
+            transform: scale(1.1);
+            text-transform: bold;
+            text-shadow: cornflowerblue 0px 00px 500px;
+        }
+        
+        
+        
+        /* hero section */
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 60px;
+            padding: 40px;
+}
+        
+        /* hero section content */
+        .hero-left p{
+            font-size: 40px;
+            line-height: 1.3;
+            margin-block-start: 20px;
+            max-width: 500px;
+        }
+        .name{
+            color: #253D2C;
+            text-align: left;
+            font-weight: bold;
+        }
+        .tagline {
+            font-size: 28px;
+            color: #2E2E2E;
+        }
+
+        .hero-right img{
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+
+        /* about me section */
+        .about{
+            /* background-color: #253d2c; */
+            font-size: 20px;
+            text-align: center;
+            color: #4A3B2A;
+            padding: 20px;
+        }
+        .about p {
+            line-height: 1.8;
+        }
+
+
+        /* projects section */
+        .projects{
+            /* background-color: #bac095; */
+            color: #161616;
+            padding: 20px;
+        }
+        .projects h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .project-list{
+            /* background: #e9ecd6; */
+            background: rgba(0, 0, 0, 0.25);
+            padding: 20px;
+            margin: 20px 0;
+            margin-top: 8px;
+            line-height: 1.6;
+            transition: transform 0.3s ease;
+        }
+        .project-list p{
+            margin-top: 8px;
+            color: #4A3B2A;
+        }
+        .project-list h3 a{
+            color: #ccb7a8;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        .project-list:hover{
+            text-decoration: underline;
+            transform: scale(1.02);
+            transition: 0.3s;
+        }
+
+
+
+        /* contact section */
+        .contact{
+            /* background-color: #253d2c; */
+            color: #1d1d1d;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+
+        .about, .contact, .projects {
+            border-radius: 12px;
+            margin: 40px auto;
+            padding: 40px;
+            max-width: 900px;
+            background: rgba(134, 108, 15, 0.363);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- navigation bar -->
+     <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- hero section -->
+    <div class="hero" id="home">
+        <div class="hero-left">
+            <p class="name">Sukrima Maharjan</p>
+            <p class="tagline">Learning. Building. Growing.</p>
+        </div>
+         <div class="hero-right">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWM7M9rXVAHcRbp7AGcT4GtuNrzsbs1RVuAg&s" alt="Sukrima Maharjan Photo">
+         </div>
+    </div>
+
+
+    <!-- about me -->
+     <div class="about" id="about">
+        <p>
+            Engineering student <br>
+            Learning HTML and CSS<br>
+            Beginner but curious <br>
+            Building projects to enhance my skills<br>
+            Aspiring web developer<br>
+        </p>
+     </div>
+
+
+    <!-- projects -->     
+     <div class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <h3><a href="http://127.0.0.1:5500/3registrationForm.html">Student Registration Form</a></h3>
+            <p>Simple HTML form for student registration.</p>
+        </div>
+        <div class="project-list">
+            <h3><a href="http://127.0.0.1:5500/portfolio.html">Personal Portfolio Website</a></h3>
+            <p>A portfolio website showcasing my projects and skills.</p>
+        </div>
+        <div class="project-list">
+            <h3><a href="http://127.0.0.1:5500/Restaurant%20Menu/index.html">Restaurant Menu</a></h3>
+        </div>
+        <div class="project-list">
+            <h3><a href="http://127.0.0.1:5500/Photo%20Gallery/index.html">Photo Gallery</a></h3>
+            <p>A responsive photo gallery built with HTML and CSS.</p>
+        </div>
+     </div>
+    
+    
+     <!--  contact -->
+       <div class="contact" id="contact">
+            <h2>Contact</h2>
+            <p>Email: suk.rima.080@gmail.com</p>
+            <p>GitHub: sukrima-080</p>
+       </div>
+
+
+
+
+
+</body>
+
+</html>
